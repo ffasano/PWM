@@ -31,6 +31,10 @@ export class HomePage {
             this.display = this.display * 10 + n;
         }
     }
+    
+    pippo2Test() {
+        return;
+    }
     pressOperatore(op) {
 
         // L'ultimo tasto era già un operatore. Lo sostituisco
