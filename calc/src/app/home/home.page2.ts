@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     templateUrl: 'home.page.html',
     styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage2 {
 
     public display = 0;
     public totale = 0;
@@ -14,6 +14,7 @@ export class HomePage {
     public errore = '';
     public mostraTotale = false;
 
+    public pippo = 'Pippo';
 
     pressNumber(n) {
         this.mostraTotale = false;
@@ -32,7 +33,7 @@ export class HomePage {
         }
     }
 
-    pippo2Test() {
+    pippoTest() {
         return;
     }
     pressOperatore(op) {
