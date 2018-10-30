@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-    display = 0;
-    totale = 0;
-    operazione = '';
-    premutoOperatore = false;
-    errore = '';
-    mostraTotale = false;
+    public display = 0;
+    public totale = 0;
+    public operazione = '';
+    public premutoOperatore = false;
+    public errore = '';
+    public mostraTotale = false;
 
 
     pressNumber(n) {
