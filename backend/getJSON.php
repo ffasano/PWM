@@ -24,6 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 
+
 //PRENDI JSON PREFERENZE DAL CLIENT
 $req = json_decode(file_get_contents('php://input'), true);
 
@@ -32,6 +33,19 @@ $option = $req['option'];
 http_response_code(200);
 if ($option == "JSON") {
     echo json_encode(['result' => 'pippo']);
+} else if ($option == "DOCENTE") {
+
+    $materie = [
+        'II anno triennale' => 'Ingegneria del Software e laboratorio',
+        'III anno triennale' => 'Programmazione web e mobile',
+        'I anno magistrale' => 'Gestione Progetti Software'];
+
+    $docente = [
+        'nome' => 'Fausto',
+        'cognome' => 'Fasano',
+        'materie' => $materie];
+
+    echo json_encode($docente);
 } else {
     echo "pippo";
 }
